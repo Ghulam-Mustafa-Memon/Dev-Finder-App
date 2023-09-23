@@ -1,0 +1,219 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --light-blue: #1e2a47;
+    --dark-blue: #141d2f;
+    --navy-blue: #0079ff;
+    --white-color: #fff;
+    --light-color: #4b6a9b;
+}
+
+button {
+    padding: .75rem 2rem;
+    color: var(--white-color);
+    background: var(--navy-blue);
+    border-radius: 4px;
+    box-shadow: 0 0 20px --navy-blue;
+    transition: .5s ease all;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: var(--light-color);
+}
+
+body {
+    background: var(--light-blue);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--dark-blue);
+    color: white;
+    padding: 1rem 0;
+}
+
+nav button {
+    background: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.11rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+}
+
+.main-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--white-color);
+    height: 85vh;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    background: var(--dark-blue);
+    border: 1.25px solid var(--white-color);
+    padding: 4px 55px;
+    border-radius: 4px;
+    color: var(--white-color);
+}
+
+::placeholder {
+    color: rgb(135, 135, 135);
+}
+
+form input {
+    color: white;
+    background: none;
+    font-size: 1.25rem;
+    width: 80%;
+}
+
+form button {
+    padding: 0;
+}
+
+form button:hover {
+    background: none;
+}
+
+form button i {
+    font-size: 1.65rem;
+}
+
+.intro {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro img {
+    height: 11rem;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+
+.intro .text {}
+
+.intro .text h1 {
+    font-size: 2.5rem;
+}
+
+.text div {
+    color: var(--light-color);
+    transition: .5s ease all;
+    width: fit-content;
+}
+
+.text div:hover {
+    padding-left: 8px;
+}
+
+.text div a {
+    color: var(--light-color);
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.text div p {
+    font-size: .70rem;
+}
+
+.text button {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.details {
+    background: var(--dark-blue);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+    /* padding: 1rem 3rem; */
+    margin: 3rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2rem var(--dark-blue);
+}
+
+.bio {
+    margin: 2rem 3rem;
+}
+
+.bio p {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.bio p span {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--light-color);
+
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem;
+    margin: 2rem 0rem;
+    background: var(--light-blue);
+}
+
+.count {
+    text-align: center;
+    font-style: oblique;
+}
+
+.count h2 {}
+
+.count p {
+    font-size: 1.5rem;
+}
+
+.informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 3rem;
+}
+
+.info {}
+
+.info i {
+    color: var(--light-color);
+    font-size: 1.30rem;
+}
+
+.info a {
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
