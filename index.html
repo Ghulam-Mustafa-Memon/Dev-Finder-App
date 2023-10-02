@@ -20,23 +20,24 @@
         rel="stylesheet">
     <!-- ________ Fav Icon ________ -->
     <link rel="shortcut icon" href="./assets/pngs/pngwing.com.png" type="image/x-icon">
-
+    <!-- _____________ Animation _____________ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <nav>
-        <h2>Devfinder.</h2>
-        <form>
+        <h2 data-aos="fade-left">Devfinder.</h2>
+        <form id="my-form" data-aos="fade-down">
             <input type="text" name="" id="" placeholder="Enter Username:">
-            <button><i class='bx bx-search'></i></button>
+            <button><i class='bx bx-search-alt-2'></i></i></button>
         </form>
-        <button>Dark<i class='bx bxs-sun'></i></button>
+        <button data-aos="fade-right">Light<i class='bx bxs-sun'></i></button>
     </nav>
 
     <div class="main-container">
         <div class="intro">
-            <img src="./assets/pngs/pngwing.com.png" alt="">
-            <div class="text">
+            <img src="./assets/pngs/pngwing.com.png" alt="" data-aos="fade-left">
+            <div class="text" data-aos="fade-right">
                 <h1>Ahtesham Akram</h1>
                 <div>
                     <a href="">@devahtesham</a>
@@ -46,28 +47,30 @@
             </div>
         </div>
         <div class="details">
-            <div class="bio">
+            <div class="bio" data-aos="fade-up">
                 <p> <span>Bio:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatem beatae
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente minus voluptas molestiae facere
+                    animi praesentium deleniti architecto, asperiores illo! Architecto reiciendis voluptatem minus
+                    itaque magnam dignissimos reprehenderit harum quis magni.
                     quidem quas obcaecati dolorum eius accusamus vero, iusto inventore, est maxime iure totam, libero
                     nam
                     incidunt. Tenetur, dolore sunt?</p>
             </div>
             <div class="counter">
-                <div class="count">
+                <div class="count" data-aos="fade-left">
                     <h2>Repositories:</h2>
                     <p>12+</p>
                 </div>
-                <div class="count">
+                <div class="count" data-aos="fade-left">
                     <h2>Followers:</h2>
                     <p>112+</p>
                 </div>
-                <div class="count">
+                <div class="count" data-aos="fade-left">
                     <h2>Following:</h2>
                     <p>1212+</p>
                 </div>
             </div>
-
-            <div class="informations">
+            <div class="informations" data-aos="fade-down">
                 <div class="info">
                     <i class='bx bxs-map'></i>
                     <a href="">info@gmail.com</a>
@@ -85,12 +88,30 @@
                     <a href="">info@gmail.com</a>
                 </div>
             </div>
-
         </div>
     </div>
-
 </body>
 <!-- ________ Index.Js ________ -->
 <script src="./assets/index.js"></script>
+<script>
+    let myForm = document.getElementById("my-form")
+    myForm.addEventListener("focusin", () => {
+        myForm.classList.add("highlighted")
+    })
+    myForm.addEventListener("focusout", () => {
+        myForm.classList.remove("highlighted")
+    })
+</script>
+<!-- ==================js plugin for scroll ============================ -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            offset: 100,
+            duration: 700,
+        }
+    );
+</script>
+<!-- ==================js plugin for scroll ============================ -->
 
 </html>
